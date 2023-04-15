@@ -144,10 +144,14 @@ class MainActivity : AppCompatActivity() {
                     farmerresources_total.text = "Total: " +data?.FarmerResources?.total.toString()
                     farmerresources_count.text = data?.FarmerResources?.unique.toString()
 
+                    try {
+                        val numbers = intArrayOf(data?.FarmerDetails?.unique!!,
+                            data?.FarmerAddresses?.unique!!,data?.FarmerResources?.unique!!,data?.FarmerGroups?.unique!!,data?.ValueChains?.unique!!)
+                        total.text = numbers.minOrNull()!!.toString()
+                    } catch (e:Exception){
 
-                    val numbers = intArrayOf(data?.FarmerDetails?.unique!!,
-                        data?.FarmerAddresses?.unique!!,data?.FarmerResources?.unique!!,data?.FarmerGroups?.unique!!,data?.ValueChains?.unique!!)
-                    total.text = numbers.minOrNull()!!.toString()
+                    }
+                    
                 }
 
                 override fun onFailure(call: Call<StatsStatus>, t: Throwable) {

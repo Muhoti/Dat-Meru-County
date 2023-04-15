@@ -42,7 +42,7 @@ class FarmerAddress: AppCompatActivity() {
     lateinit var preferences: SharedPreferences
     lateinit var editor: SharedPreferences.Editor
 
-        val ip_URL = "http://185.215.180.181:7014/api/map/"
+        val ip_URL = "http://185.215.180.181:7084/api/map/"
     //val ip_URL = "    http://192.168.1.114:3003/api/map/"
 
     //    val ip_URL = "http://demo.osl.co.ke:444/"
