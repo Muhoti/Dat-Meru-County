@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ward" >
+        <item>Abogeta east</item>
+        <item>Abogeta West</item>
+        <item>Abothuguchi Central</item>
+        <item>Abothuguchi West</item>
+        <item>Akachiu</item>
+        <item>Akirang’ondu</item>
+        <item>Akithi</item>
+        <item>Amwathi</item>
+        <item>Antuambui</item>
+        <item>Antubetwe Kiongo</item>
+        <item>Athiru</item>
+        <item>Athiru</item>
+        <item>Athwana</item>
+        <item>Gaiti</item>
+        <item>Igembe East Njia</item>
+        <item>Igoji East</item>
+        <item>Igoji West</item>
+        <item>Kangeta</item>
+        <item>Kanuni</item>
+        <item>Karama</item>
+        <item>Kegoi/Antubochiu</item>
+        <item>Kiagu</item>
+        <item>Kianjai</item>
+        <item>Kibirichia</item>
+        <item>Kiguchwa</item>
+        <item>Kiirua/Naari</item>
+        <item>Kisima</item>
+        <item>Maua</item>
+        <item>Mbeu</item>
+        <item>Mikinduri</item>
+        <item>Mithara</item>
+        <item>Mitunguu</item>
+        <item>Municipality</item>
+        <item>Mwanganthia</item>
+        <item>Naathui</item>
+        <item>Nkomo</item>
+        <item>Nkuene</item>
+        <item>Ntima East</item>
+        <item>Ntima West</item>
+        <item>Ntunene</item>
+        <item>Nyaki East</item>
+        <item>Nyaki West</item>
+        <item>Ruiri/Rwarera</item>
+        <item>Ruujine</item>
+        <item>Thangatha</item>
+        <item>Timau</item>
+    </string-array>
+
+    <string-array name="subCounty" >
+        <item>Buuri East</item>
+        <item>Buri West</item>
+        <item>Igembe North</item>
+        <item>Igembe South</item>
+        <item>Imenti Central</item>
+        <item>Imenti North</item>
+        <item>Imenti South</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="ages">
+        <item>18-35 Years</item>
+        <item>35-65 Years</item>
+        <item>66 and above</item>
+    </string-array>
+
+    <string-array name="county">
+        <item>Meru</item>
+    </string-array>
+
+    <string-array name="farming" >
+        <item>Crop Farming</item>
+        <item>Livestock Farming</item>
+        <item>Mixed Farming</item>
+    </string-array>
+
+    <string-array name="grouptype">
+        <item>CIG</item>
+        <item>SACCO</item>
+        <item>P.O</item>
+        <item>Cohort</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="productionunit">
+        <item>KGs</item>
+        <item>Litres</item>
+        <item>Trays</item>
+        <item>Number</item>
+        <item>Live Birds</item>
+    </string-array>
+
+    <string-array name="farmingPeriod">
+        <item>Annually</item>
+        <item>Bi-annually</item>
+        <item>Quarterly</item>
+        <item>Monthly</item>
+        <item>Weekly</item>
+        <item>Daily</item>
+    </string-array>
+
+
+</resources>
