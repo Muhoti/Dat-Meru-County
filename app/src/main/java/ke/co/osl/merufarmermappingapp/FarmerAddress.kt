@@ -58,7 +58,7 @@ class FarmerAddress: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_location)
 
-        preferences = this.getSharedPreferences("kisiiapp", MODE_PRIVATE)
+        preferences = this.getSharedPreferences("meruapp", MODE_PRIVATE)
         editor = preferences.edit()
 
         accuracy = findViewById(R.id.accuracy)

@@ -22,7 +22,7 @@ class AddValueChain: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_addvaluechain)
 
-        preferences = this.getSharedPreferences("kisiiapp", MODE_PRIVATE)
+        preferences = this.getSharedPreferences("meruapp", MODE_PRIVATE)
         editor = preferences.edit()
 
         val back = findViewById<ImageView>(R.id.back)

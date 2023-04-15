@@ -18,10 +18,20 @@
         android:layout_width="350dp"
         android:layout_height="350dp"
         android:layout_marginBottom="30dp"
-        android:src="@drawable/kisii_logo"
+        android:src="@drawable/logo"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="County Government of Mery"
+        app:layout_constraintTop_toBottomOf="@id/landingintro"
+        android:textColor="@color/blue"
+        android:gravity="center"
+        android:textSize="35dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

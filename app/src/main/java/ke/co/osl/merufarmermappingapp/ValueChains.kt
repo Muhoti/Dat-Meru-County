@@ -28,7 +28,7 @@ class ValueChains: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_valuechain)
 
-        preferences = this.getSharedPreferences("kisiiapp", MODE_PRIVATE)
+        preferences = this.getSharedPreferences("meruapp", MODE_PRIVATE)
         editor = preferences.edit()
 
         recyclerlist = findViewById(R.id.recycler_list)

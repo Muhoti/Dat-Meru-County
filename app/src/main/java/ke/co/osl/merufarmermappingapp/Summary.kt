@@ -62,7 +62,7 @@ class Summary : AppCompatActivity() {
         vcCheck = findViewById(R.id.vc_check)
 
 
-        preferences = this.getSharedPreferences("kisiiapp", MODE_PRIVATE)
+        preferences = this.getSharedPreferences("meruapp", MODE_PRIVATE)
         editor = preferences.edit()
 
         nationalID = preferences.getString("NationalID", "")!!

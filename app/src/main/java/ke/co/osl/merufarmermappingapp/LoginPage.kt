@@ -42,7 +42,7 @@ class LoginPage: AppCompatActivity() {
         dialog = Dialog(this)
         dialog.setContentView(R.layout.custom_dialog)
 
-        preferences = this.getSharedPreferences("kisiiapp", MODE_PRIVATE)
+        preferences = this.getSharedPreferences("meruapp", MODE_PRIVATE)
         editor = preferences.edit()
         postLoginDetails()
     }

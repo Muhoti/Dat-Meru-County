@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
 
         actionBarToggle.syncState()
 
-        preferences = this.getSharedPreferences("kisiiapp", MODE_PRIVATE)
+        preferences = this.getSharedPreferences("meruapp", MODE_PRIVATE)
         editor = preferences.edit()
 
         val nationalID = preferences.getString("NationalID","")

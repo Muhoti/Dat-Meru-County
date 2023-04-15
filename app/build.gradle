@@ -7,7 +7,7 @@ android {
     compileSdkVersion 31
     buildToolsVersion "31.0.0"
     defaultConfig {
-        applicationId "ke.co.osl.kisiifarmermappingapp"
+        applicationId "ke.co.osl.merufarmermappingapp"
         minSdkVersion 19
         targetSdkVersion 31
         versionCode 1

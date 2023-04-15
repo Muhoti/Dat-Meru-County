@@ -33,7 +33,7 @@ class FarmerAssociations: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_associations)
 
-        preferences = this.getSharedPreferences("kisiiapp", MODE_PRIVATE)
+        preferences = this.getSharedPreferences("meruapp", MODE_PRIVATE)
         editor = preferences.edit()
 
         recyclerlist = findViewById(R.id.recycler_list)
