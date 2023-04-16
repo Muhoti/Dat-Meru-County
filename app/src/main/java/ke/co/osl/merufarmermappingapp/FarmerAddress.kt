@@ -317,8 +317,11 @@ class FarmerAddress: AppCompatActivity() {
                 ward.selectedItem.toString(),
                 lat.toString(),
                 lng.toString(),
-                village.text.toString().capitalize()
+                village.text.toString()
             )
+
+
+            System.out.println(farmersLocationBody)
 
 
             val apiInterface = ApiInterface.create().postFarmerLocation(farmersLocationBody)
@@ -381,7 +384,7 @@ class FarmerAddress: AppCompatActivity() {
                 village.text.toString().capitalize()
                 )
 
-            System.out.println(farmersLocationBody)
+            System.out.println(body)
 
             val apiInterface = ApiInterface.create().putFarmerAddress(body.FarmerID, farmersLocationBody)
             apiInterface.enqueue( object : Callback<Message> {

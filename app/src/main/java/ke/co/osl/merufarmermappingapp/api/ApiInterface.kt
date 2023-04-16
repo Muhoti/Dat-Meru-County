@@ -10,7 +10,7 @@ interface ApiInterface {
 
     companion object {
 
-    //val BASE_URL = "http://192.168.1.136:3003/"
+    //val BASE_URL = "http://192.168.100.15:3003/api/"
      val BASE_URL = "http://185.215.180.181:7084/api/"
 
         fun create() : ApiInterface {
@@ -46,7 +46,7 @@ interface ApiInterface {
     @POST("farmerdetails/create")
     fun postFarmerDetails(@Body farmerDetails: FarmersDetailsBody) : Call<Message>
 
-    @POST("farmeraddress")
+    @POST("farmeraddress/register")
     fun postFarmerLocation(@Body farmerLocation: FarmersLocationBody) : Call<Message>
 
     @POST("farmerresources")
