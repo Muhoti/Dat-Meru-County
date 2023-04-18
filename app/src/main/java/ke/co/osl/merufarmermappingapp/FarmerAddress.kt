@@ -41,6 +41,8 @@ class FarmerAddress: AppCompatActivity() {
     var acc: Float = 0f
     lateinit var preferences: SharedPreferences
     lateinit var editor: SharedPreferences.Editor
+    lateinit var subCountys: Spinner
+    lateinit var wards: Spinner
 
         val ip_URL = "http://185.215.180.181:7084/api/map/"
     //val ip_URL = "    http://192.168.1.114:3003/api/map/"
@@ -177,6 +179,55 @@ class FarmerAddress: AppCompatActivity() {
             }
         }
         webView.loadUrl(ip_URL)
+
+        subCountys = findViewById(R.id.subCounty)
+        wards = findViewById(R.id.ward)
+
+        val subCountyAdapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.subCounty,
+            android.R.layout.simple_spinner_item
+        )
+
+        subCountys.adapter = subCountyAdapter
+
+        subCountys.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+
+                val subCounty = when(position){
+                    0 -> arrayOf("Timau", "Kisima", "Kiirua/Naari", "Ruiri/Rwarera")
+                    1 -> arrayOf("Akirang'ondu", "Athiru", "Ruujine", "Igembe East Njia", "Kangeta")
+                    2 -> arrayOf("Antuambui", "Ntunene", "Antubetwe", "Kiongo", "Naathui", "Amwathi")
+                    3 -> arrayOf("Maua", "Kegoi/Antubochiu", "Athiru", "Gaiti", "Akachiu", "Kanuni")
+                    4 -> arrayOf("Mwanganthia", "Abothuguchi Central", "Abothuguchi West", "Kiagu", "Kibirichia")
+                    5 -> arrayOf("Municipality", "Ntima East", "Ntima West", "Nyaki West", "Nyaki East")
+                    6 -> arrayOf("Mitunguu", "Igoji East", "Igoji West", "Abogeta East", "Abogeta West", "Nkuene")
+                    7 -> arrayOf("Thangatha", "Mikinduri", "Kiguchwa", "Mithara", "Karama")
+                    8 -> arrayOf("Athwana", "Akithi", "Kianjai", "Nkomo", "Mbeu")
+                    else -> emptyArray()
+                }
+
+                val ward = ArrayAdapter(
+                    this@FarmerAddress,
+                    android.R.layout.simple_spinner_item,
+                    subCounty
+                )
+
+                wards.adapter = ward
+
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+
+        }
+
     }
 
     private fun refreshMap() {
@@ -282,8 +333,6 @@ class FarmerAddress: AppCompatActivity() {
             Manifest.permission.ACCESS_FINE_LOCATION,
             Manifest.permission.ACCESS_COARSE_LOCATION))
     }
-
-
 
     private fun postFarmerDetails(id:String) {
         val next = findViewById<Button>(R.id.next)
