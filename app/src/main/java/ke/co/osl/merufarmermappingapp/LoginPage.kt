@@ -13,6 +13,7 @@ import android.util.Patterns
 import android.widget.*
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.lifecycleScope
+import ke.co.osl.merufarmermappingapp.models.LoginBody
 import ke.co.osl.merufarmermappingapp.models.RecoverPasswordBody
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -34,11 +35,6 @@ class LoginPage: AppCompatActivity() {
             showDialog()
         }
 
-//        next.setOnClickListener {
-//            startActivity(Intent(this@LoginPage,MainActivity::class.java))
-//        }
-
-//        Theme_Black_NoTitleBar_Fullscreen - style theme changed from...
         dialog = Dialog(this)
         dialog.setContentView(R.layout.custom_dialog)
 
@@ -66,7 +62,7 @@ class LoginPage: AppCompatActivity() {
             }
 
             progress.visibility = View.VISIBLE
-            val loginBody = ke.co.osl.merufarmermappingapp.models.LoginBody(
+            val loginBody = LoginBody(
                 email.text.toString(),
                 password.text.toString(),
             )
@@ -83,7 +79,6 @@ class LoginPage: AppCompatActivity() {
                         System.out.println("HEY YOU" + response.body())
                         editor.commit()
                         startActivity(Intent(this@LoginPage,MainActivity::class.java))
-                        System.out.print("done done")
                         finish()
                     }
                     else {

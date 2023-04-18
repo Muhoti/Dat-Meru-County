@@ -24,10 +24,9 @@
 
     <string-array name="valuechain_array">
         <item>Banana</item>
-        <item>Beans</item>
-        <item>Dairy</item>
-        <item>Vegetables</item>
-        <item>Local Chicken</item>
+        <item>Avocado</item>
+        <item>Irish Potatoes</item>
+        <item>Macadamia</item>
     </string-array>
 
     <string name="title_activity_main">MainActivity</string>

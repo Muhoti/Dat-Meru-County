@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string-array name="ward" >
+        <item>Abakaile</item>
         <item>Abogeta east</item>
         <item>Abogeta West</item>
         <item>Abothuguchi Central</item>
         <item>Abothuguchi West</item>
+        <item>Abothuguchi West</item>
         <item>Akachiu</item>
         <item>Akirang’ondu</item>
+        <item>Akorino</item>
         <item>Akithi</item>
+        <item>Akuka</item>
+        <item>Ameru</item>
         <item>Amwathi</item>
         <item>Antuambui</item>
         <item>Antubetwe Kiongo</item>
-        <item>Athiru</item>
-        <item>Athiru</item>
+        <item>Athiru Gaiti</item>
+        <item>Athiru Rujine</item>
         <item>Athwana</item>
         <item>Gaiti</item>
         <item>Igembe East Njia</item>
@@ -57,6 +63,8 @@
         <item>Imenti Central</item>
         <item>Imenti North</item>
         <item>Imenti South</item>
+        <item>Tigania East</item>
+        <item>Tigania West</item>
     </string-array>
 
     <string-array name="gender">
@@ -89,10 +97,7 @@
 
     <string-array name="productionunit">
         <item>KGs</item>
-        <item>Litres</item>
-        <item>Trays</item>
         <item>Number</item>
-        <item>Live Birds</item>
     </string-array>
 
     <string-array name="farmingPeriod">
