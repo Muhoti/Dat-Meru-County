@@ -64,7 +64,7 @@ interface ApiInterface {
     @PUT("farmeraddress/{id}")
     fun putFarmerAddress(@Path("id") id: String, @Body farmerLocation: FarmersLocationBody) : Call<Message>
 
-    @GET("farmergroups/farmerid/{id}")
+    @GET("farmergroups/{id}")
     fun showFarmerGroups(@Path("id") id: String) : Call<List<FarmerAssociationsBody>>
 
     @GET("farmervaluechains/{id}")
